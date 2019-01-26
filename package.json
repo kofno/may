@@ -1,19 +1,25 @@
 {
   "name": "@kofno/may",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "Non-class Maybe algebra for typescript",
   "main": "index.js",
   "author": "Ryan L. Bell <ryan.l.bell@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "prettier": "^1.16.1",
+    "semantic-release": "^15.13.3",
     "ts-node": "^8.0.2",
+    "typedoc": "^0.14.2",
     "typescript": "^3.2.4"
   },
   "dependencies": {
-    "@kofno/piper": "^1.0.0",
-    "typedoc": "^0.14.2"
+    "@kofno/piper": "^1.0.0"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "semantic-release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
